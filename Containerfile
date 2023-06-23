@@ -49,6 +49,8 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 # Copy the build script and all custom scripts.
 COPY scripts /tmp/scripts
 
+RUN curl -L https://pkgs.tailscale.com/stable/fedora/tailscale.repo -o /etc/yum.repos.d/tailscale.repo
+
 # Run the build script, then clean up temp files and finalize container build.
 RUN rpm-ostree install /tmp/ublue-os-wallpapers-0.1-1.fc38.noarch.rpm && \
         chmod +x /tmp/scripts/build.sh && \
