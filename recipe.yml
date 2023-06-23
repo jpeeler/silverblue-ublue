@@ -61,8 +61,12 @@ rpm:
     - fontawesome-fonts
     - mako
     - powerline-fonts
+    - swappy
+    - squeekboard
     - wlsunset
+    - wl-mirror
     - wofi
+    - wtype
     # (mine) utils:
     - containernetworking-plugins
     - ddcutil
@@ -76,7 +80,15 @@ rpm:
     - qemu
     - ranger
     - ripgrep
+    # (mine) external repos:
+    - eww-wayland-git
     - tailscale
+    - hyprland
+    - hyprland-contrib
+    - hyprland-plugins
+    - hyprpicker
+    - hyprshot
+    - xdg-desktop-portal-hyprland
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -111,3 +123,4 @@ firstboot:
     - org.telegram.desktop
     - org.videolan.VLC
     - app.drey.Warp
+    - app.getclipboard.clipboard
