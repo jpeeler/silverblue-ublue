@@ -4,7 +4,7 @@
 name: jpeeler/silverblue-ublue
 # The native container image to build on top of.
 # Warning: Non-uBlue images might not work properly, due to missing components.
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/sericea-main
 # What Fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
@@ -55,9 +55,28 @@ rpm:
     # apps and binaries require it, so it's a good idea to always include it
     # if you ever download or compile any custom software on your machine.
     - libadwaita
-    # Add your own below:
-    # Example:
-    # - tilix
+    # (mine) desktop:
+    - kitty
+    - fira-code-fonts
+    - fontawesome-fonts
+    - mako
+    - powerline-fonts
+    - wlsunset
+    - wofi
+    # (mine) utils:
+    - containernetworking-plugins
+    - ddcutil
+    - dutree
+    - fd-find
+    - fish
+    - gparted
+    - i3status-rs
+    - ncdu
+    - perl
+    - qemu
+    - ranger
+    - ripgrep
+    # - tailscale
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -79,4 +98,16 @@ firstboot:
   # This is just an example selection:
   flatpaks:
     - io.github.celluloid_player.Celluloid
-    - org.kde.krita
+    - com.bitwarden.desktop
+    - com.github.any1.wlvncc
+    - com.parsecgaming.parsec
+    - com.slack.Slack
+    - com.spotify.Client
+    - com.sublimemerge.App
+    - com.visualstudio.code-oss
+    - fr.handbrake.ghb
+    - md.obsidian.Obsidian
+    - com.microsoft.Edge
+    - org.telegram.desktop
+    - org.videolan.VLC
+    - app.drey.Warp
