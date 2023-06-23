@@ -29,7 +29,8 @@ COPY ${RECIPE} /usr/share/ublue-os/recipe.yml
 
 # "yq" used in build.sh and the "setup-flatpaks" just-action to read recipe.yml.
 # Copied from the official container image since it's not available as an RPM.
-COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
+#COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
+RUN curl -L https://github.com/mikefarah/yq/releases/download/v4.34.1/yq_linux_amd64 -o /usr/bin/yq && chmod +x /usr/bin/yq
 
 # Copy the build script and all custom scripts.
 COPY scripts /tmp/scripts
