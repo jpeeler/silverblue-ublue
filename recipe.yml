@@ -61,7 +61,9 @@ rpm:
     - kitty
     - fira-code-fonts
     - fontawesome-fonts
+    - fuzzel
     - mako
+    - pipewire-plugin-libcamera
     - powerline-fonts
     - swappy
     - squeekboard
@@ -79,6 +81,7 @@ rpm:
     - i3status-rs
     - ncdu
     - perl
+    - policycoreutils
     - qemu
     - ranger
     - ripgrep
@@ -126,3 +129,4 @@ firstboot:
     - org.videolan.VLC
     - app.drey.Warp
     - app.getclipboard.clipboard
+    - org.kde.dolpin
