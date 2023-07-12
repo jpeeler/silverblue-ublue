@@ -85,6 +85,7 @@ rpm:
     - qemu
     - ranger
     - ripgrep
+    - syncthing
     # (mine) external repos:
     - eww-wayland-git
     - tailscale
