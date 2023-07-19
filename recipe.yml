@@ -72,6 +72,7 @@ rpm:
     - wofi
     - wtype
     # (mine) utils:
+    - bat
     - containernetworking-plugins
     - ddcutil
     - dutree
@@ -86,6 +87,7 @@ rpm:
     - ranger
     - ripgrep
     - syncthing
+    - udiskie
     # (mine) external repos:
     - eww-wayland-git
     - tailscale
@@ -131,3 +133,5 @@ firstboot:
     - app.drey.Warp
     - app.getclipboard.clipboard
     - org.kde.dolpin
+    - org.pipewire.Helvum
+    - com.github.wwmm.easyeffects
