@@ -58,18 +58,22 @@ rpm:
     # if you ever download or compile any custom software on your machine.
     - libadwaita
     # (mine) desktop:
+    - qalculate-gtk
     - kitty
     - fira-code-fonts
     - fontawesome-fonts
     - fuzzel
+    - grim
     - mako
     - pipewire-plugin-libcamera
     - powerline-fonts
+    - slurp
     - swappy
     - squeekboard
     - wlsunset
+    - wl-clipboard
     - wl-mirror
-    - wofi
+    - wev
     - wtype
     # (mine) utils:
     - bat
@@ -78,10 +82,12 @@ rpm:
     - dutree
     - fd-find
     - fish
+    - fzf
     - gparted
     - i3status-rs
     - ncdu
     - perl
+    - playerctl
     - policycoreutils
     - qemu
     - ranger
