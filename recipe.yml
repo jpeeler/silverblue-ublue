@@ -77,7 +77,6 @@ rpm:
     - wtype
     # (mine) utils:
     - bat
-    - containernetworking-plugins
     - ddcutil
     - dutree
     - fd-find
