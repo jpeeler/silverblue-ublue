@@ -83,6 +83,7 @@ rpm:
     - fd-find
     - fish
     - fzf
+    - git-delta
     - gparted
     - i3status-rs
     - ncdu
