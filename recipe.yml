@@ -79,6 +79,7 @@ rpm:
     - wl-clipboard
     - wl-mirror
     - wev
+    - wshowkeys
     - wtype
     # (mine) utils:
     - bat
