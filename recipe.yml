@@ -104,7 +104,7 @@ rpm:
     # (mine) external repos:
     - eww-wayland-git
     - tailscale
-    - hyprland
+    - hyprland-git
     - hyprland-contrib
     - hyprland-plugins
     - hyprpicker
