@@ -88,6 +88,7 @@ rpm:
     - fd-find
     - fish
     - fzf
+    - gdb
     - git-delta
     - gparted
     - i3status-rs
