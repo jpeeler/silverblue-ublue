@@ -151,3 +151,4 @@ firstboot:
     - com.github.wwmm.easyeffects
     - org.freedesktop.Platform.ffmpeg-full
     - com.github.KRTirtho.Spotube
+    - io.github.nokse22.minitext
