@@ -100,6 +100,7 @@ rpm:
     - ripgrep
     - syncthing
     - udiskie
+    - valgrind
     # (mine) external repos:
     - eww-wayland-git
     - tailscale
